@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#111315" />
+    <meta
+      name="description"
+      content="TitanLog hesabını ve ilişkili verileri uygulama içinden veya e-posta talebiyle silme adımları."
+    />
+    <title>TitanLog Hesap ve Veri Silme</title>
+    <link rel="stylesheet" href="../assets/styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">İçeriğe geç</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="../"><span class="brand-mark">T</span>itanLog</a>
+        <nav aria-label="Yasal sayfalar">
+          <ul>
+            <li><a href="../privacy/">Gizlilik Politikası</a></li>
+            <li><a aria-current="page" href="./">Hesap Silme</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="page" id="main">
+      <header class="hero">
+        <p class="eyebrow">Kullanıcı kontrolü</p>
+        <h1>TitanLog Hesap ve Veri Silme</h1>
+        <p class="lead">
+          TitanLog hesabınızı uygulama içinden kalıcı olarak silebilir veya
+          uygulamaya erişemiyorsanız e-posta yoluyla güvenli bir silme talebi
+          başlatabilirsiniz.
+        </p>
+        <p class="meta">Son güncelleme: 26 Ağustos 2026</p>
+      </header>
+
+      <article class="prose">
+        <h2>Uygulama içinden silme</h2>
+        <ol class="steps">
+          <li><strong>TitanLog</strong> uygulamasında hesabınıza giriş yapın.</li>
+          <li><strong>Profil → Ayarları Aç</strong> yolunu izleyin.</li>
+          <li><strong>Hesap ve Tehlikeli İşlemler</strong> ekranını açın.</li>
+          <li>Mevcut şifrenizi girip <strong>Hesabımı Sil</strong> seçeneğini onaylayın.</li>
+        </ol>
+        <p>
+          Güvenliğiniz için mevcut şifrenizle yakın tarihli hesap doğrulaması
+          gerekir. Doğrulama başarısız olursa hesap silinmez.
+        </p>
+
+        <h2>Uygulamaya erişemiyorsanız</h2>
+        <div class="callout important">
+          <h3>E-posta ile hesap silme talebi başlatın</h3>
+          <p>
+            Resmî TitanLog destek adresine “TitanLog hesap silme talebi” konulu
+            bir e-posta gönderin. Mümkünse TitanLog hesabınızda kullandığınız
+            e-posta adresinden yazın.
+          </p>
+          <p>
+            <a
+              class="mail-action"
+              href="mailto:ilhanbuilds@gmail.com?subject=TitanLog%20hesap%20silme%20talebi"
+            >Silme talebi e-postası oluştur</a>
+          </p>
+          <p>
+            Adres: <a href="mailto:ilhanbuilds@gmail.com">ilhanbuilds@gmail.com</a>
+          </p>
+        </div>
+        <p>
+          Hesap ve ilişkili veriler silinmeden önce hesap sahipliği güvenli
+          biçimde doğrulanacaktır. Doğrulama tamamlanamazsa silme işlemi
+          gerçekleştirilemez. E-postanıza şifre, erişim/yenileme tokenı,
+          <code>.titanlog</code> yedek dosyası, kimlik belgesi veya başka hassas
+          veri eklemeyin. Gerekli doğrulama adımları talep sırasında ayrıca
+          iletilir.
+        </p>
+
+        <h2>Silme işleminin kapsadığı veriler</h2>
+        <p>Başarılı hesap silme işlemi şunları kaldırır:</p>
+        <ul>
+          <li>TitanLog hesabı ve Supabase Auth kimliği;</li>
+          <li>hesaba ait otomatik fitness eşitleme kayıtları ve eşitleme metadata’sı;</li>
+          <li>programlar, antrenmanlar, egzersiz geçmişi, setler ve çalışma ağırlıklarının eşitlenmiş kopyaları;</li>
+          <li>eşitlenmiş vücut profili ve vücut ölçümleri;</li>
+          <li>hesaba ait özel profil fotoğrafı;</li>
+          <li>eski sürümlerden kalmış hesaba özel yedek ve eşitleme Storage nesneleri;</li>
+          <li>hesabın oluşturduğu program paylaşım kayıtları;</li>
+          <li>silme işleminin yapıldığı cihazdaki hesaba özel SQLite çalışma alanı, yerel profil medyası ve egzersiz favorileri.</li>
+        </ul>
+
+        <h2>Merkezi olarak silinemeyen bağımsız kopyalar</h2>
+        <p>
+          Daha önce başka uygulamalara veya konumlara aktardığınız
+          <code>.titanlog</code> dosyaları TitanLog’un kontrolü dışındadır ve
+          seçtiğiniz hedeflerden ayrıca silinmelidir. Başka kullanıcıların bir
+          paylaşım koduyla daha önce içe aktardığı bağımsız program kopyaları da
+          hesap silme işlemiyle uzaktan kaldırılamaz.
+        </p>
+
+        <h2>Yerel veriler ve misafir modu</h2>
+        <p>
+          Uygulama içi silme, işlem yapılan cihazdaki hesaba özel yerel fitness
+          verilerini de kaldırmayı dener. Yerel temizlik tamamlanamazsa uygulama
+          Android uygulama verilerini temizlemeniz gerektiğini bildirir. Misafir
+          verileri TitanLog hesabıyla ilişkili değildir; hesap silme talebinden
+          etkilenmez ve ilgili cihazdan ayrıca temizlenmelidir.
+        </p>
+
+        <h2>Saklama hakkında</h2>
+        <p>
+          TitanLog hesap silme için sabit bir yanıt süresi veya silme sonrası
+          belirli bir saklama süresi taahhüt etmez. Hesap sahipliği doğrulandıktan
+          ve silme işlemi başarıyla tamamlandıktan sonra yukarıda belirtilen,
+          TitanLog’un kontrolündeki hesap verileri kaldırılır. TitanLog’un kontrolü
+          dışındaki dışa aktarılmış veya bağımsız kopyalar bu işlemin kapsamı
+          dışındadır.
+        </p>
+
+        <p>
+          Veri işleme hakkında daha fazla bilgi için
+          <a href="../privacy/">TitanLog Gizlilik Politikası</a> sayfasını okuyun.
+        </p>
+      </article>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <p>TitanLog · Son güncelleme: 26 Ağustos 2026</p>
+        <div class="footer-links">
+          <a href="mailto:ilhanbuilds@gmail.com">ilhanbuilds@gmail.com</a>
+          <a href="../">Ana Sayfa</a>
+          <a href="../privacy/">Gizlilik</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
