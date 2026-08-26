@@ -109,6 +109,89 @@
           etkilenmez ve ilgili cihazdan ayrıca temizlenmelidir.
         </p>
 
+        <section class="callout" aria-labelledby="data-deletion-without-account">
+          <h2 id="data-deletion-without-account">Hesabı silmeden verileri silme</h2>
+          <p>
+            TitanLog hesabınızı korurken aşağıdaki kayıtları uygulama içinden
+            ayrı ayrı silebilirsiniz:
+          </p>
+          <ul>
+            <li>
+              <strong>Tamamlanmış antrenman:</strong>
+              <strong>Antrenman → Antrenman geçmişini aç</strong> yolunu izleyin,
+              tamamlanmış antrenmanı seçin ve <strong>Antrenmanı Sil</strong>
+              seçeneğini onaylayın. Bu işlem seçilen geçmiş kaydını, o kayıttaki
+              egzersizleri ve setleri siler.
+            </li>
+            <li>
+              <strong>Vücut ölçümü:</strong>
+              <strong>Gelişim → Ölçüm Geçmişi</strong> bölümünde ölçümü seçin,
+              <strong>Ölçümü Sil → Sil</strong> adımlarını kullanın. İlk ölçüm ve
+              geriye kalan tek ölçüm ayrı ayrı silinemez.
+            </li>
+            <li>
+              <strong>Antrenman programı:</strong>
+              <strong>Antrenman → Programlar</strong> bölümünde program kartındaki
+              <strong>Sil</strong> seçeneğini onaylayın. Programa bağlı herhangi
+              bir antrenman oturumu varsa program silinmez; geçmişi korumak için
+              yalnızca arşivlenebilir.
+            </li>
+            <li>
+              <strong>Programdaki antrenman günü:</strong>
+              <strong>Antrenman → Programlar → program → antrenman günü</strong>
+              yolunu izleyin ve <strong>Antrenmanı Programdan Sil → Antrenmanı
+              Sil</strong> seçeneklerini kullanın. Aktif veya tamamlanmış oturum
+              geçmişi bulunan gün silinemez.
+            </li>
+            <li>
+              <strong>Program günündeki egzersiz:</strong> İlgili programın
+              antrenman gününü açın, egzersizin <strong>Kaldır</strong> seçeneğine
+              ve ardından <strong>Günden Kaldır</strong> onayına dokunun. Bu işlem
+              egzersizi yalnız o program gününden kaldırır; egzersiz geçmişini
+              silmez.
+            </li>
+            <li>
+              <strong>Aktif antrenmandaki tamamlanmamış set veya başlanmamış
+              egzersiz:</strong> Aktif antrenmanda egzersiz düzenleme ekranını açın
+              ve uygun olduğunda <strong>Son Seti Kaldır</strong> ya da
+              <strong>Hareketi kaldır</strong> seçeneğini kullanın. Tamamlanmış seti
+              bulunan egzersiz bu yolla kaldırılamaz; yalnız son ve tamamlanmamış
+              set kaldırılabilir ve egzersizde en az bir set kalır.
+            </li>
+            <li>
+              <strong>Profil fotoğrafı:</strong>
+              <strong>Profil → Ayarları Aç → Hesap ve Tehlikeli İşlemler → Profil
+              Fotoğrafını Kaldır → Kaldır</strong> yolunu kullanın. Hesaplı
+              kullanımda fotoğraf cihazdan ve hesaba ait özel profil alanından
+              kaldırılır.
+            </li>
+            <li>
+              <strong>Egzersiz favorisi:</strong> Egzersiz ekleme ekranında seçili
+              favori yıldızına yeniden dokunun. Favori işareti yalnız o cihazdaki
+              çalışma alanından kaldırılır.
+            </li>
+          </ul>
+          <p>
+            Oturum açmış kullanıcılarda antrenman, program ve vücut ölçümü
+            silmeleri önce cihazdaki SQLite çalışma alanına uygulanır. İnternet
+            bağlantısı bulunduğunda ve otomatik eşitleme başarıyla tamamlandığında
+            bu silmeler hesaba ait uzak eşitleme kayıtlarına ve desteklenen diğer
+            cihazlara aktarılır. Profil fotoğrafı kaldırıldığında hesaba ait özel
+            Storage nesnesi de silinir. Egzersiz favorileri yalnız cihazda tutulur
+            ve otomatik eşitlenmez. Misafir modundaki tüm bu işlemler yalnız ilgili
+            cihazı etkiler.
+          </p>
+          <p>
+            Bu kontroller hesabın e-posta adresini, kimlik doğrulama kimliğini,
+            tüm profil tercihlerini, tüm yedek/eşitleme metadata’sını veya hesaba
+            bağlı bütün verileri topluca silmez. Bunların tamamını kaldırmak için
+            bu sayfadaki <strong>hesap silme</strong> yöntemini kullanmanız gerekir.
+            <strong>Arşivle</strong>, <strong>Antrenmanı İptal Et</strong> ve
+            <strong>Paylaşımı Kapat</strong> işlemleri veri kaydını silme işlemi
+            değildir.
+          </p>
+        </section>
+
         <h2>Saklama hakkında</h2>
         <p>
           TitanLog hesap silme için sabit bir yanıt süresi veya silme sonrası
