@@ -8,9 +8,9 @@
     <link rel="icon" href="data:," />
     <meta
       name="description"
-      content="TitanLog hesabını ve ilişkili verileri uygulama içinden veya e-posta talebiyle silme adımları."
+      content="TitanLog yerel verilerini uygulama içinden veya Android uygulama ayarlarından silme adımları."
     />
-    <title>TitanLog Hesap ve Veri Silme</title>
+    <title>TitanLog Yerel Veri Silme</title>
     <link rel="stylesheet" href="../assets/styles.css" />
   </head>
   <body>
@@ -21,7 +21,7 @@
         <nav aria-label="Yasal sayfalar">
           <ul>
             <li><a href="../privacy/">Gizlilik Politikası</a></li>
-            <li><a aria-current="page" href="./">Hesap Silme</a></li>
+            <li><a aria-current="page" href="./">Yerel Veri Silme</a></li>
           </ul>
         </nav>
       </div>
@@ -29,177 +29,105 @@
     <main class="page" id="main">
       <header class="hero">
         <p class="eyebrow">Kullanıcı kontrolü</p>
-        <h1>TitanLog Hesap ve Veri Silme</h1>
+        <h1>TitanLog Yerel Veri Silme</h1>
         <p class="lead">
-          TitanLog hesabınızı uygulama içinden kalıcı olarak silebilir veya
-          uygulamaya erişemiyorsanız e-posta yoluyla güvenli bir silme talebi
-          başlatabilirsiniz.
+          TitanLog verileri öncelikle cihazınızda saklanır. Aşağıdaki kontrollerle
+          belirli kayıtları veya bu cihazdaki tüm TitanLog verilerini silebilirsiniz.
         </p>
-        <p class="meta">Son güncelleme: 26 Ağustos 2026</p>
+        <p class="meta">Son güncelleme: 28 Ağustos 2026</p>
       </header>
 
       <article class="prose">
-        <h2>Uygulama içinden silme</h2>
+        <h2>Tüm yerel verileri uygulama içinden silme</h2>
         <ol class="steps">
-          <li><strong>TitanLog</strong> uygulamasında hesabınıza giriş yapın.</li>
+          <li><strong>TitanLog</strong> uygulamasını açın.</li>
           <li><strong>Profil → Ayarları Aç</strong> yolunu izleyin.</li>
-          <li><strong>Hesap ve Tehlikeli İşlemler</strong> ekranını açın.</li>
-          <li>Mevcut şifrenizi girip <strong>Hesabımı Sil</strong> seçeneğini onaylayın.</li>
+          <li><strong>Tüm Yerel Verileri Sil</strong> seçeneğini açın.</li>
+          <li><strong>Tüm TitanLog Verilerini Sil</strong> düğmesine dokunun.</li>
+          <li><strong>Kalıcı Olarak Sil</strong> seçeneğiyle ikinci onayı verin.</li>
         </ol>
-        <p>
-          Güvenliğiniz için mevcut şifrenizle yakın tarihli hesap doğrulaması
-          gerekir. Doğrulama başarısız olursa hesap silinmez.
-        </p>
-
-        <h2>Uygulamaya erişemiyorsanız</h2>
         <div class="callout important">
-          <h3>E-posta ile hesap silme talebi başlatın</h3>
           <p>
-            Resmî TitanLog destek adresine “TitanLog hesap silme talebi” konulu
-            bir e-posta gönderin. Mümkünse TitanLog hesabınızda kullandığınız
-            e-posta adresinden yazın.
-          </p>
-          <p>
-            <a
-              class="mail-action"
-              href="mailto:ilhanbuilds@gmail.com?subject=TitanLog%20hesap%20silme%20talebi"
-            >Silme talebi e-postası oluştur</a>
-          </p>
-          <p>
-            Adres: <a href="mailto:ilhanbuilds@gmail.com">ilhanbuilds@gmail.com</a>
+            Bu işlem geri alınamaz. Programlar, antrenmanlar, geçmiş, vücut
+            ölçümleri, hedefler, tercihler, favoriler ve profil medyasıyla ilgili
+            yerel uygulama verileri bu cihazdan silinir. Eşleştirilmiş saate
+            gönderilmiş aktif antrenman durumu da temizlenir.
           </p>
         </div>
+
+        <h2>Android ayarlarından silme</h2>
         <p>
-          Hesap ve ilişkili veriler silinmeden önce hesap sahipliği güvenli
-          biçimde doğrulanacaktır. Doğrulama tamamlanamazsa silme işlemi
-          gerçekleştirilemez. E-postanıza şifre, erişim/yenileme tokenı,
-          <code>.titanlog</code> yedek dosyası, kimlik belgesi veya başka hassas
-          veri eklemeyin. Gerekli doğrulama adımları talep sırasında ayrıca
-          iletilir.
+          TitanLog’a erişemiyorsanız Android’in uygulama bilgileri ekranını açıp
+          <strong>TitanLog → Depolama ve önbellek → Depolamayı temizle</strong>
+          veya cihazınızda aynı işlevi taşıyan seçeneği kullanabilirsiniz. Menü
+          adları Android sürümüne ve cihaz üreticisine göre değişebilir.
         </p>
 
-        <h2>Silme işleminin kapsadığı veriler</h2>
-        <p>Başarılı hesap silme işlemi şunları kaldırır:</p>
+        <h2>Belirli kayıtları ayrı ayrı silme</h2>
         <ul>
-          <li>TitanLog hesabı ve Supabase Auth kimliği;</li>
-          <li>hesaba ait otomatik fitness eşitleme kayıtları ve eşitleme metadata’sı;</li>
-          <li>programlar, antrenmanlar, egzersiz geçmişi, setler ve çalışma ağırlıklarının eşitlenmiş kopyaları;</li>
-          <li>eşitlenmiş vücut profili ve vücut ölçümleri;</li>
-          <li>hesaba ait özel profil fotoğrafı;</li>
-          <li>eski sürümlerden kalmış hesaba özel yedek ve eşitleme Storage nesneleri;</li>
-          <li>hesabın oluşturduğu program paylaşım kayıtları;</li>
-          <li>silme işleminin yapıldığı cihazdaki hesaba özel SQLite çalışma alanı, yerel profil medyası ve egzersiz favorileri.</li>
+          <li>
+            <strong>Tamamlanmış antrenman:</strong>
+            <strong>Antrenman → Antrenman geçmişini aç</strong> yolunu izleyin,
+            kaydı seçin ve <strong>Antrenmanı Sil</strong> seçeneğini onaylayın.
+          </li>
+          <li>
+            <strong>Vücut ölçümü:</strong>
+            <strong>Gelişim → Ölçüm Geçmişi</strong> bölümünde ölçümü seçin ve
+            <strong>Ölçümü Sil → Sil</strong> adımlarını kullanın. İlk ölçüm ve
+            geriye kalan tek ölçüm ayrı ayrı silinemeyebilir.
+          </li>
+          <li>
+            <strong>Antrenman programı:</strong>
+            <strong>Antrenman → Programlar</strong> bölümünde programın
+            <strong>Sil</strong> seçeneğini onaylayın. Bağlı antrenman geçmişi
+            bulunan programlar silinmek yerine arşivlenebilir.
+          </li>
+          <li>
+            <strong>Programdaki antrenman günü:</strong>
+            Programı ve ilgili antrenman gününü açıp
+            <strong>Antrenmanı Programdan Sil → Antrenmanı Sil</strong>
+            seçeneklerini kullanın. Korunması gereken aktif veya tamamlanmış
+            kayıt varsa silme engellenebilir.
+          </li>
+          <li>
+            <strong>Program günündeki egzersiz:</strong>
+            İlgili program gününde egzersizin <strong>Kaldır</strong> seçeneğine,
+            ardından <strong>Günden Kaldır</strong> onayına dokunun. Bu işlem
+            geçmiş kayıtlarını silmez.
+          </li>
+          <li>
+            <strong>Aktif antrenmandaki tamamlanmamış set veya başlanmamış egzersiz:</strong>
+            Egzersiz düzenleme ekranında uygun olduğunda
+            <strong>Son Seti Kaldır</strong> veya <strong>Hareketi kaldır</strong>
+            seçeneğini kullanın. Tamamlanmış setler korunur ve egzersizde en az
+            bir set kalır.
+          </li>
+          <li>
+            <strong>Profil fotoğrafı:</strong>
+            Profil ayarlarında profil fotoğrafını kaldırma seçeneğini kullanın.
+          </li>
+          <li>
+            <strong>Egzersiz favorisi:</strong>
+            Egzersiz ekleme ekranında seçili favori yıldızına yeniden dokunun.
+          </li>
         </ul>
 
-        <h2>Merkezi olarak silinemeyen bağımsız kopyalar</h2>
+        <h2>Dışa aktarılan dosyalar ve paylaşım hedefleri</h2>
         <p>
-          Daha önce başka uygulamalara veya konumlara aktardığınız
-          <code>.titanlog</code> dosyaları TitanLog’un kontrolü dışındadır ve
-          seçtiğiniz hedeflerden ayrıca silinmelidir. Başka kullanıcıların bir
-          paylaşım koduyla daha önce içe aktardığı bağımsız program kopyaları da
-          hesap silme işlemiyle uzaktan kaldırılamaz.
+          Uygulama içindeki veya Android ayarlarındaki silme işlemi daha önce
+          dışa aktardığınız <code>.titanlog</code> dosyalarını ve seçtiğiniz
+          paylaşım hedeflerinde oluşan kopyaları silemez. Bu dosyalar
+          kriptografik koruma olmadan saklanabilir ve ilgili uygulama veya
+          konumdan ayrıca silinmelidir.
         </p>
 
-        <h2>Yerel veriler ve misafir modu</h2>
+        <h2>Destek</h2>
         <p>
-          Uygulama içi silme, işlem yapılan cihazdaki hesaba özel yerel fitness
-          verilerini de kaldırmayı dener. Yerel temizlik tamamlanamazsa uygulama
-          Android uygulama verilerini temizlemeniz gerektiğini bildirir. Misafir
-          verileri TitanLog hesabıyla ilişkili değildir; hesap silme talebinden
-          etkilenmez ve ilgili cihazdan ayrıca temizlenmelidir.
-        </p>
-
-        <section class="callout" aria-labelledby="data-deletion-without-account">
-          <h2 id="data-deletion-without-account">Hesabı silmeden verileri silme</h2>
-          <p>
-            TitanLog hesabınızı korurken aşağıdaki kayıtları uygulama içinden
-            ayrı ayrı silebilirsiniz:
-          </p>
-          <ul>
-            <li>
-              <strong>Tamamlanmış antrenman:</strong>
-              <strong>Antrenman → Antrenman geçmişini aç</strong> yolunu izleyin,
-              tamamlanmış antrenmanı seçin ve <strong>Antrenmanı Sil</strong>
-              seçeneğini onaylayın. Bu işlem seçilen geçmiş kaydını, o kayıttaki
-              egzersizleri ve setleri siler.
-            </li>
-            <li>
-              <strong>Vücut ölçümü:</strong>
-              <strong>Gelişim → Ölçüm Geçmişi</strong> bölümünde ölçümü seçin,
-              <strong>Ölçümü Sil → Sil</strong> adımlarını kullanın. İlk ölçüm ve
-              geriye kalan tek ölçüm ayrı ayrı silinemez.
-            </li>
-            <li>
-              <strong>Antrenman programı:</strong>
-              <strong>Antrenman → Programlar</strong> bölümünde program kartındaki
-              <strong>Sil</strong> seçeneğini onaylayın. Programa bağlı herhangi
-              bir antrenman oturumu varsa program silinmez; geçmişi korumak için
-              yalnızca arşivlenebilir.
-            </li>
-            <li>
-              <strong>Programdaki antrenman günü:</strong>
-              <strong>Antrenman → Programlar → program → antrenman günü</strong>
-              yolunu izleyin ve <strong>Antrenmanı Programdan Sil → Antrenmanı
-              Sil</strong> seçeneklerini kullanın. Aktif veya tamamlanmış oturum
-              geçmişi bulunan gün silinemez.
-            </li>
-            <li>
-              <strong>Program günündeki egzersiz:</strong> İlgili programın
-              antrenman gününü açın, egzersizin <strong>Kaldır</strong> seçeneğine
-              ve ardından <strong>Günden Kaldır</strong> onayına dokunun. Bu işlem
-              egzersizi yalnız o program gününden kaldırır; egzersiz geçmişini
-              silmez.
-            </li>
-            <li>
-              <strong>Aktif antrenmandaki tamamlanmamış set veya başlanmamış
-              egzersiz:</strong> Aktif antrenmanda egzersiz düzenleme ekranını açın
-              ve uygun olduğunda <strong>Son Seti Kaldır</strong> ya da
-              <strong>Hareketi kaldır</strong> seçeneğini kullanın. Tamamlanmış seti
-              bulunan egzersiz bu yolla kaldırılamaz; yalnız son ve tamamlanmamış
-              set kaldırılabilir ve egzersizde en az bir set kalır.
-            </li>
-            <li>
-              <strong>Profil fotoğrafı:</strong>
-              <strong>Profil → Ayarları Aç → Hesap ve Tehlikeli İşlemler → Profil
-              Fotoğrafını Kaldır → Kaldır</strong> yolunu kullanın. Hesaplı
-              kullanımda fotoğraf cihazdan ve hesaba ait özel profil alanından
-              kaldırılır.
-            </li>
-            <li>
-              <strong>Egzersiz favorisi:</strong> Egzersiz ekleme ekranında seçili
-              favori yıldızına yeniden dokunun. Favori işareti yalnız o cihazdaki
-              çalışma alanından kaldırılır.
-            </li>
-          </ul>
-          <p>
-            Oturum açmış kullanıcılarda antrenman, program ve vücut ölçümü
-            silmeleri önce cihazdaki SQLite çalışma alanına uygulanır. İnternet
-            bağlantısı bulunduğunda ve otomatik eşitleme başarıyla tamamlandığında
-            bu silmeler hesaba ait uzak eşitleme kayıtlarına ve desteklenen diğer
-            cihazlara aktarılır. Profil fotoğrafı kaldırıldığında hesaba ait özel
-            Storage nesnesi de silinir. Egzersiz favorileri yalnız cihazda tutulur
-            ve otomatik eşitlenmez. Misafir modundaki tüm bu işlemler yalnız ilgili
-            cihazı etkiler.
-          </p>
-          <p>
-            Bu kontroller hesabın e-posta adresini, kimlik doğrulama kimliğini,
-            tüm profil tercihlerini, tüm yedek/eşitleme metadata’sını veya hesaba
-            bağlı bütün verileri topluca silmez. Bunların tamamını kaldırmak için
-            bu sayfadaki <strong>hesap silme</strong> yöntemini kullanmanız gerekir.
-            <strong>Arşivle</strong>, <strong>Antrenmanı İptal Et</strong> ve
-            <strong>Paylaşımı Kapat</strong> işlemleri veri kaydını silme işlemi
-            değildir.
-          </p>
-        </section>
-
-        <h2>Saklama hakkında</h2>
-        <p>
-          TitanLog hesap silme için sabit bir yanıt süresi veya silme sonrası
-          belirli bir saklama süresi taahhüt etmez. Hesap sahipliği doğrulandıktan
-          ve silme işlemi başarıyla tamamlandıktan sonra yukarıda belirtilen,
-          TitanLog’un kontrolündeki hesap verileri kaldırılır. TitanLog’un kontrolü
-          dışındaki dışa aktarılmış veya bağımsız kopyalar bu işlemin kapsamı
-          dışındadır.
+          TitanLog geliştiricisi cihazınızdaki uygulama verilerine erişemez ve
+          cihazınızdaki verileri sizin adınıza silemez. Silme kontrolleriyle ilgili
+          yardım için <a href="mailto:ilhanbuilds@gmail.com">ilhanbuilds@gmail.com</a>
+          adresine yazabilirsiniz. E-postanıza <code>.titanlog</code> dosyası veya
+          başka hassas veri eklemeyin.
         </p>
 
         <p>
@@ -210,7 +138,7 @@
     </main>
     <footer class="site-footer">
       <div class="footer-inner">
-        <p>TitanLog · Son güncelleme: 26 Ağustos 2026</p>
+        <p>TitanLog · Son güncelleme: 28 Ağustos 2026</p>
         <div class="footer-links">
           <a href="mailto:ilhanbuilds@gmail.com">ilhanbuilds@gmail.com</a>
           <a href="../">Ana Sayfa</a>
