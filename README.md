@@ -1,8 +1,10 @@
 # Racker Legal
 
-Official public legal pages for Racker.
+Official public and legal pages for Racker, a local-first Android + Wear OS workout tracker.
 
-- [Privacy Policy](https://ilhanki.github.io/TitanLog-Legal/privacy/)
-- [Local Data Deletion](https://ilhanki.github.io/TitanLog-Legal/account-deletion/)
+- [Homepage](https://ilhanbuilds.github.io/Racker-Legal/)
+- [Privacy Policy](https://ilhanbuilds.github.io/Racker-Legal/privacy/)
 
-This repository contains legal and public website content only. It does not contain the Racker application source code.
+Racker requires no account. Its local-first architecture stores core workout data on the user's device, with no developer-operated fitness-data backend.
+
+This repository contains only public and legal website content. Application source code is not included.
