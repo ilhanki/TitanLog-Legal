@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="112" viewBox="0 0 480 112" role="img" aria-labelledby="title desc">
+  <title id="title">Racker</title>
+  <desc id="desc">Copper outlined R monogram beside a neutral Racker wordmark on a transparent background.</desc>
+  <rect x="8" y="16" width="80" height="80" rx="18" fill="none" stroke="#c47a3b" stroke-width="3"/>
+  <path d="M33 77V35h17c10 0 16 5 16 13s-6 13-16 13H33m18 0 17 16" fill="none" stroke="#c47a3b" stroke-width="7" stroke-linejoin="round"/>
+  <text x="110" y="78" fill="#858585" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="66" font-weight="700" letter-spacing="1.5">Racker</text>
+</svg>
